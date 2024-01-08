@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: maroon;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color:bisque;
+    text-decoration: none;
+    font-weight: 800;
+}
+.navbar a{
+    font-size:20px ;
+    color:bisque;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 36px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:rgba(189,139,12,0.789);
+}
+.home{
+    height: 100vh;
+    background:linear-gradient(-90deg,rgb(198, 172, 140) 65%,#fff 35%) ;
+    display:flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background:rgb(198, 172, 140);
+    border-radius: 50%;
+    border: 25px solid #fff;
+    outline:25px solid rgb(198, 172, 140);
+}
+.home-image img{
+    height: 400px; 
+    width: 400px;
+    position: relative;
+    border-radius: 200px;
+    
+   
+}
+.home-content{
+    max-width: 600px;
+    color:rgba(0, 0, 0, 0.632);
+    text-align: right;
+
+}
+.home-content h1{
+    font-size: 40px;
+    line-height: 1.2;
+}
+.home-content h3{
+    font-size: 40px;
+    color:transparent;
+    -webkit-text-stroke: .5px #fff;
+    background-image: linear-gradient(rgb(198, 172, 140),rgb(96, 57, 9));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animateText 6s linear infinite;
+    
+
+}
+@keyframes animateText{
+    0%,
+    95%,
+    100%{
+        background-position: -410px 0;
+    }
+    65%,
+    85%{
+        background-position: 0 0;
+    }
+}
+.home-content p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.home-sci{
+    margin: 25px 0 40px;
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius:50%;
+    font-size:20px;
+    color:rgba(0,0,0,0.632);
+    text-decoration: none;
+    margin-left:12px;
+    transition: .5s;
+}
+.home-sci a:hover{
+    background: rgb(223, 75, 75);
+    color:black;
+    border-color: rgb(223, 75, 75);
+    box-shadow: 0 0 10px rgb(223, 75, 75);
+}
+.btn{
+    padding: 12px 35px;
+    background: rgb(223, 75, 75);
+    border-radius: 40px;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px rgb(223, 75, 75);
+    transition: .5s;
+}
+
